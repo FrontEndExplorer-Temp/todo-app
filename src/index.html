@@ -8,7 +8,30 @@
   </head>
   <body>
     <div id="app">
+      <h1>Todo App</h1>
+
+      <div id="project-form">
+        <input type="text" id="project-name" placeholder="Enter project name" />
+        <button id="add-project">Add Project</button>
+      </div>
+
       <div id="projects"></div>
+
+      <div id="todo-form" style="display: none">
+        <input type="text" id="todo-title" placeholder="Enter todo title" />
+        <input
+          type="text"
+          id="todo-description"
+          placeholder="Enter todo description" />
+        <input type="date" id="todo-due-date" />
+        <select id="todo-priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button id="add-todo">Add Todo</button>
+      </div>
+
       <div id="todos"></div>
     </div>
     <script src="bundle.js"></script>
